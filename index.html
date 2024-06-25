@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaflet Map with Sidebar</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="sidebar" class="sidebar">
+        <div id="sidebar-content">
+          <h2>Aircraft Range</h2>
+          
+          <div class="dropdown">
+            <button class="dropdown-button">Choose an Airport</button>
+            <div class="dropdown-content">
+              <a href="#">London</a>
+              <a href="#">Dubai</a>
+              <a href="#">New York</a>
+            </div>
+          </div>
+          <p>Aircraft Range (Km)</p>
+
+          <input type="number" id="radius-input" placeholder="Enter range">
+        </div>
+      </div>
+      <div id="map" class="map"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.geodesic"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
